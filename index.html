@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Know Your High Court Judges</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Know Your High Court Judges (KHOJ)</h1>
+    <p class="subtitle">A <a href="https://justicehub.in/" target="_blank">Justice Hub</a> initiative</p>
+
+    <!-- Social Media -->
+    <div class="header-links">
+        <a href="https://justicehub.in/initiatives/khoj-india" target="_blank">About</a>
+        <a href="https://twitter.com/JusticeHubIndia" target="_blank">Twitter</a>
+        <a href="https://dataforjustice.substack.com/" target="_blank">Newsletter</i></a>
+        <a href="https://in.linkedin.com/company/justice-hub-india" target="_blank">LinkedIn</i></a>
+        <a href="https://justicehub.in/dataset/khoj-india" target="_blank">Dataset</a>
+        <a href="https://justicehub-in.github.io/know-your-high-court-judges/scripts/data-publishing.html" target="_blank">Analysis</a>
+    </div>
+
+    
+    <!-- Judge Dropdown -->
+    <select id="judgeDropdown" onchange="displaySelectedJudge()">
+        <option value="" disabled selected>Select a Judge</option>
+        <!-- Judge names will be dynamically populated here -->
+    </select>
+    
+    <!-- Judge Details Sections -->
+    <div id="judgeDetails">
+        <!-- Personal Details -->
+        <div id="personalDetails" class="judgeSection">
+            <h2>Personal Details</h2>
+        </div>
+
+        <!-- Appointed to High Court -->
+        <div id="appointedToHighCourt" class="judgeSection">
+            <h2>High Court Appointments</h2>
+        </div>
+
+        <!-- Transfers -->
+        <div id="transfers" class="judgeSection">
+            <h2>Transfers</h2>
+        </div>
+
+        <!-- Supreme Court -->
+        <div id="supremeCourt" class="judgeSection">
+            <h2>Supreme Court Appointments</h2>
+        </div>
+
+        <!-- Experience -->
+        <div id="experience" class="judgeSection">
+            <h2>Professional Experience</h2>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+ <!-- Footer section -->
+ <footer>
+    <div class="footer-column">
+        <a href="https://civicdatalab.in" target="_blank" rel="noopener noreferrer"><img src="assets/images/cdl_logo.png" alt="CivicDataLab Logo"></a>
+        <a href="http://justicehub.in" target="_blank" rel="noopener noreferrer"><img src="assets/images/justicehub_logo.png" alt="JusticeHub Logo"></a>
+    </div>
+
+    <div class="footer-column">
+        Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.
+    </div>
+
+    <div class="footer-column">
+        <p><a href="https://dataforjustice.substack.com/subscribe" target="_blank" rel="noopener noreferrer">Subscribe</a> for updates</p>
+    </div>
+
+</footer>
+
+</html>
