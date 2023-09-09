@@ -1,0 +1,163 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, select {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F6F1;
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+    padding-bottom: 20px;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('assets/fonts/Mona-Sans.woff2');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+  html {
+    font-family: 'Mona Sans';
+  }
+
+/* Center the title and subtitle at the top */
+h1, .subtitle {
+    text-align: center;
+    margin-bottom: 10px; /* Add margin between title and subtitle */
+}
+
+/* Center the dropdown */
+#judgeDropdown {
+    font-family: 'Mona Sans', sans-serif; 
+    width: 70%; /* Adjust the width as needed */
+    padding: 10px;
+    margin: 10px auto; /* Add space below subtitle */
+    display: block;
+    text-align: left;
+    border-radius: 10px; /* Rounder borders */
+    border: 1px solid #ccc; /* Add a border */
+    background-color: #fff; /* Background color */
+}
+
+/* Style the dropdown options (values) */
+#judgeDropdown option {
+    text-align: left;
+}
+
+a {
+    color: #e76a56;
+    text-decoration: none; /* Remove underlines from hyperlinks */
+}
+
+/* Apply a color change on hover */
+a:hover {
+    color: #007bff; /* Change to the desired hover color */
+}
+
+
+/* Style the Font Awesome icons */
+.header-links {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add space below the icons */
+}
+
+.header-links a {
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 10px; /* Adjust the spacing between links */
+    transition: color 0.3s; /* Add transition for color change */
+}
+
+/* Style the judge details sections */
+.judgeSection {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px; /* Limit the width of the judge details for better readability */
+}
+
+
+/* Style the judge details sections with different background colors */
+#personalDetails {
+    background-color: #fdd8e6; /* Pink */
+}
+
+#appointedToHighCourt {
+    background-color: #d6dbd1; /* Green */
+}
+
+#transfers {
+    background-color: #b3cfe6; /* Blue */
+}
+
+#supremeCourt {
+    background-color: #b8b3d1; /* Purple */
+}
+
+#experience {
+    background-color: #f3c291; /* Orange */
+}
+
+/* Style section headings */
+.judgeSection h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333; /* Add a solid underline */
+    padding-bottom: 5px; /* Add spacing between text and underline */
+    text-transform: capitalize; /* Convert section titles to Title Case */
+
+}
+
+/* Style table-like layout for judge details */
+.judgeSection p {
+    margin: 10px 0;
+    font-size: 16px; 
+    line-height: 1.2;
+}
+
+/* Footer styles */
+footer {
+
+    padding: 20px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc; /* Add a top border to separate footer from the body */
+}
+
+/* Style each footer column */
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center; /* Center the text horizontally */
+}
+
+/* Style the logos and images in the first and third columns */
+.footer-column img {
+    max-width: 100%;
+    max-height: 60px; /* Adjust the maximum height as needed */
+    height: auto;  
+}
+
+
+/* Ensure the judge details sections are responsive on smaller screens */
+@media (max-width: 600px) {
+    .judgeSection {
+        padding: 10px;
+    }
+    .judgeSection h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .judgeSection p {
+        font-size: 14px;
+
+    }
+    /* Add any other responsive styles as needed */
+}
