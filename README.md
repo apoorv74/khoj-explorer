@@ -1,5 +1,7 @@
 ## Know your High Court Judges (KHOJ) - Data Explorer
 
+[![Website Screenshot](assets/images/screenshot.PNG)](https://apoorv74.github.io/khoj-explorer)
+
 **About the repo**
 
 A simple web app to view data collected for judges under the KHOJ initiative
