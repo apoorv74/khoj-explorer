@@ -182,5 +182,9 @@ footer {
         font-size: 14px;
 
     }
+
+    .report-errors-container{
+        margin: 10px;
+    }
     /* Add any other responsive styles as needed */
 }
