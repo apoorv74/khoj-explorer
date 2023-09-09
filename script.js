@@ -1,7 +1,7 @@
 // Function to fetch JSON data from a file
 async function fetchJSON() {
     try {
-        const response = await fetch('data/khoj_india.json'); // Replace with the actual file path
+        const response = await fetch('data/khoj_india.json');
         const data = await response.json();
         return data;
     } catch (error) {
@@ -21,6 +21,19 @@ function populateDropdown(judgeData) {
         dropdown.appendChild(option);
     });
 }
+
+// Function to display random judge details
+function displayRandomJudge() {
+    const randomIndex = Math.floor(Math.random() * judgeData.length);
+    const randomJudge = judgeData[randomIndex];
+    displayJudgeDetails(randomJudge);
+}
+
+// Add an event listener to the "Random" link
+document.getElementById('randomLink').addEventListener('click', () => {
+    displayRandomJudge();
+});
+
 
 // Function to display judge details for the selected judge
 function displaySelectedJudge() {
