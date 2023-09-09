@@ -128,9 +128,20 @@ a:hover {
     line-height: 1.2;
 }
 
+.report-errors-container {
+    max-width: 600px; /* Set the desired max width for the container */
+    margin: 10px auto; /* Center the container horizontally */
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff; /* Background color */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add a border to separate from the footer */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+
 /* Footer styles */
 footer {
-
     padding: 20px;
     display: flex;
     font-size: 14px;
